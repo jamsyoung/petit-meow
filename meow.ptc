@@ -1,0 +1,13 @@
+print "push A to exit"
+
+@loop
+vsync 1
+if btrig() == 16 then end
+if button(0) then goto @meow
+goto @loop
+
+
+@meow
+print "Meow!"
+beep 69
+goto @loop
